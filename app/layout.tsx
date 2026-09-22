@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rajkshrestha1.com.np"),
@@ -25,6 +26,16 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-6EH7TLE8H6" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-6EH7TLE8H6');
+        `}
+      </Script>
       <body>
         <Navbar />
         {children}
