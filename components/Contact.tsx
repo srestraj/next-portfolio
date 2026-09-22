@@ -1,3 +1,5 @@
+import ArrowIcon from "./Arrow";
+
 export default function Contact() {
   return (
     <section id="contact" className="contact">
@@ -11,7 +13,7 @@ export default function Contact() {
           interesting products, teams and projects.
         </p>
         <a className="button button-dark" href="mailto:shresthar27@gmail.com">
-          Get in touch ↗
+          Get in touch <ArrowIcon className="arrow-icon" />
         </a>
       </div>
     </section>

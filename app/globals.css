@@ -290,8 +290,13 @@ h2 em {
   background: rgba(255, 255, 255, 0.9);
   color: #171717;
   border-radius: 999px;
-  padding: 5px 10px;
+  padding: 5px;
   font-size: 12px;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-index {
   left: 18px;
@@ -539,6 +544,10 @@ h2 em {
   line-height: 0.9;
   letter-spacing: -0.05em;
   margin: 0 0 35px;
+}
+
+.arrow-icon {
+  display: inline-block;
 }
 @media (max-width: 900px) {
   .container {

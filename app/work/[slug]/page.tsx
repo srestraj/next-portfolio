@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import Image from "next/image";
+import ArrowIcon from "@/components/Arrow";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -71,7 +72,7 @@ export default async function ProjectPage({
             <div>
               <span>Website</span>
               <a href={project.site} target="_blank" rel="noreferrer">
-                Visit project ↗
+                Visit project <ArrowIcon className="arrow-icon" />
               </a>
             </div>
           )}

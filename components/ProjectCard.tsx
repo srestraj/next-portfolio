@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Project } from "@/data/projects";
 import Image from "next/image";
+import ArrowIcon from "./Arrow";
 
 export default function ProjectCard({
   project,
@@ -21,7 +22,9 @@ export default function ProjectCard({
           height={300}
         />
         <span className="project-index">0{index + 1}</span>
-        <span className="project-arrow">↗</span>
+        <span className="project-arrow">
+          <ArrowIcon className="arrow-icon" />
+        </span>
       </Link>
       <div className="project-meta">
         <div>

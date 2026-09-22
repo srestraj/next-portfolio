@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ArrowIcon from "./Arrow";
 
 export default function Hero() {
   const yearsOfExperience = new Date().getFullYear() - 2019;
@@ -24,7 +25,7 @@ export default function Hero() {
         </p>
         <div className="actions">
           <Link className="button button-dark" href="#work">
-            View my work <span>↗</span>
+            View my work <ArrowIcon className="arrow-icon" />
           </Link>
           <a
             className="button button-light"

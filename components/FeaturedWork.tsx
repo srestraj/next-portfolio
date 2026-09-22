@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { featuredProjects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
+import ArrowIcon from "./Arrow";
 
 export default function FeaturedWork() {
   return (
@@ -13,7 +14,7 @@ export default function FeaturedWork() {
           </h2>
         </div>
         <Link href="/work" className="text-link">
-          View all work ↗
+          View all work <ArrowIcon className="arrow-icon" />
         </Link>
       </div>
       <div className="project-grid">
