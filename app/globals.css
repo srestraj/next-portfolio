@@ -563,6 +563,9 @@ h2 em {
   .nav-links > a:nth-child(-n + 3) {
     display: none;
   }
+  .nav-links > a:first-child {
+    display: inline-block;
+  }
   .brand {
     font-size: 36px;
   }

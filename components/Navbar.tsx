@@ -9,7 +9,7 @@ export default function Navbar() {
           raj.
         </Link>
         <div className="nav-links">
-          <Link href="/#work">work</Link>
+          <Link href="/work">work</Link>
           <Link href="/#experience">experience</Link>
           <Link href="/#about">about</Link>
           <Link href="/#contact">contact</Link>
